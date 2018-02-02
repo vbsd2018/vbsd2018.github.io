@@ -1,4 +1,50 @@
 <!doctype html>
+<style type="text/css">
+.auto-style1 {
+	font-size: small;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.normalp {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-style: normal;
+	font-variant: normal;
+}
+a:link
+	{font-family:"Times New Roman",serif;
+	color:black;
+	text-decoration:underline;
+	text-underline:single;
+}
+.auto-style10 {
+	font-size: medium;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.auto-style11 {
+	font-size: medium;
+}
+.auto-style12 {
+	font-family: Arial;
+}
+.auto-style13 {
+	font-size: medium;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+.auto-style14 {
+	font-weight: normal;
+	color: #008080;
+}
+.auto-style15 {
+	font-size: medium;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	text-align: center;
+}
+.auto-style16 {
+	font-weight: normal;
+}
+</style>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
@@ -11,9 +57,9 @@
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>VBSD 2018</title>
-<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap.min.css">
 <link rel="stylesheet" href="css/jquery.fancybox.css">
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="main.css">
 <link rel="stylesheet" href="css/responsive.css">
 <link rel="stylesheet" href="css/animate.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -39,56 +85,132 @@
 <!-- description text section -->
 <section id="descripton" class="section descripton">
   <div class="container">
-    <div class="col-md-10 col-md-offset-1 text-left">
-      <p>The performance of vision algorithms on many key problems that were once considered hard is now astounding (e.g. object detection and categorization). In many cases however, significant amounts of data are necessary to achieve high performance. We would like to focus on problem domains where insufficient raw data is available for designing and training a system. We see scarcity of data in light of the task specific objective function, as well as the underlying distributions of the natural prior and the data sampling prior. As a concrete example from autonomous driving, one can generate a potentially infinite amount of simulated data for training by using game engines. This may nevertheless miss unlikely situations that have not been explicitly modeled (such as a paper bag being blown on the road: is it an obstacle worthy of action?) Sometimes it may even be difficult to just detect that the available data is scarce with respect to an objective function. With the ever-increasing pervasiveness of vision algorithms in the real-world this becomes an important point to consider.<br><br>
+    <div class="normalp">
+      <p class="auto-style15">&nbsp;</p>
+		<p class="auto-style13">The performance of vision algorithms on many key problems that were once considered hard is now astounding (e.g. object detection and categorization). In many cases however, significant amounts of data are necessary to achieve high performance. We would like to focus on problem domains where insufficient raw data is available for designing and training a system. We see scarcity of data in light of the task specific objective function, as well as the underlying distributions of the natural prior and the data sampling prior. As a concrete example from autonomous driving, one can generate a potentially infinite amount of simulated data for training by using game engines. This may nevertheless miss unlikely situations that have not been explicitly modeled (such as a paper bag being blown on the road: is it an obstacle worthy of action?) Sometimes it may even be difficult to just detect that the available data is scarce with respect to an objective function. With the ever-increasing pervasiveness of vision algorithms in the real-world this becomes an important point to consider.<br><br>
       
       The topic of scarce data has been and is continuously being covered in the ML and adjoining communities, for instance in transfer learning. From an ML perspective we feel that vision still has a special place when it comes to explaining observed data due to the vast amount of potential prior knowledge (e.g. the separation of appearance and geometry) and data generation models (e.g. computer graphics) available. Accordingly, we are looking for unique opportunities for computer vision in modeling data and algorithms under bias or scarcity.<br><br>
 
 
-      This workshop focuses on two threads: (a) modeling input data to a generic learning system, (b) modeling the algorithm as solution to vision challenges. Towards this we pose the following questions:
-        </p>
-            <ul>
-              <li>When is data scarce or biased?</li>
-              <li>How can we detect bias or scarcity in data for a given objective function?</li>
-              <li>How can we improve and evaluate performance under bias and scarcity?</li>
+      This workshop focuses on two threads: 
+              </p>
+            <ul class="auto-style13">
+              <li class="auto-style10">Modeling input data to a generic learning system</li>
+              <li class="auto-style10"><span>Modeling the algorithm as solution to vision challenges.<span lang="en-us">?</span></span></li>
             </ul>
-         
+        <p>&nbsp;</p>
      <p>
-    </p> 
+	 Towards this we pose the following questions:
+        </p>
+            <ul class="auto-style13">
+              <li class="auto-style10">When is data scarce or biased?</li>
+              <li class="auto-style10"><span>How can we detect bias or scarcity 
+			  in data?</span></li>
+              <li class="auto-style10">How can we improve and evaluate 
+			  performance under bias <span lang="en-us">or</span> scarcity?</li>
+            </ul>
+     <p>
+     <span lang="en-us">&nbsp;&nbsp; </span>
+    </p>
     </div>
-     <div class="col-md-10 col-md-offset-1 text-left">
+     <div class="auto-style1">
           
-      <h2>Areas of Interest</h2> 
-      <p>   
-Topics for this workshop may include, but are not limited to:
-    <ul>
-        <li>Modeling data and learning from inhomogeneous input 
-        <li>Structured and unstructured prior knowledge (e.g. language, multi-modality)
-        <li>Combining domain-related and -unrelated data and priors
-        <li>Generative modeling for augmenting synthetic and real data
-        <li>Converging rendering and inference for data augmentation (e.g. combine partial inference with partial synthesis)
-        <li>Prior models for latent distributions that explain and generate images and videos
-        <li>Automation of data and prior exploration with minimal human-in-the-loop
-        <li>Design and evaluation of vision algorithms and systems under data scarcity 
-        <li>Detecting and quantifying bias and scarcity in data
-        <li>Principled combinations of prior knowledge and learnt representations
-        <li>Detecting and avoiding overfitting
-     </ul>
-     </p>  
-     </div>
-     
-     <div class="col-md-10 col-md-offset-1 text-left">
-          
-      <h2>Organizers</h2> 
-      <ul>
-        <li>Jan Ernst, Siemens</li>
-        <li>Ziyan Wu, Siemens</li>
-        <li>Kuan-Chuan Peng, Siemens</li>
-        <li>Srikrishna Karanam, Siemens</li>
+      <h2 class="auto-style14"><span lang="en-us"><strong>Call for Papers</strong></span></h2>
+		 <h2 class="auto-style10"><span lang="en-us"><span class="auto-style16">Call for Papers in PDF can be downloaded</span> 
+		<a class="auto-style10" href="docs/CfP_VBSD2018.pdf" style="text-decoration:none">
+		 <span class="auto-style10"><strong>here</strong></span> </a></span></h2>
+		 <p class="auto-style13"><span>We solicit submissions that address any 
+		 of the above questions as well as the following topics:</span></p>
+		 <ul class="auto-style13">
+			 <li class="auto-style10">Modeling data and learning from 
+			 inhomogeneous input</li>
+			 <li class="auto-style10">Structured and unstructured prior knowledge 
+			 (e.g. language, multi-modality)</li>
+			 <li class="auto-style10">Combining domain-related and unrelated data 
+			 and priors</li>
+			 <li class="auto-style10">Generative modeling for augmenting 
+			 synthetic and real data</li>
+			 <li class="auto-style10">Converging rendering and inference (e.g. 
+			 combine partial inference with partial synthesis)</li>
+			 <li class="auto-style10">Prior models for latent distributions that 
+			 explain and generate images and videos</li>
+			 <li class="auto-style10">Automation of data and prior exploration 
+			 with minimal human-in-the-loop</li>
+			 <li class="auto-style10">Design and evaluation of vision algorithms 
+			 and systems under data scarcity</li>
+			 <li class="auto-style10">Detecting and quantifying bias and scarcity 
+			 in data</li>
+			 <li class="auto-style10">Principled combinations of prior knowledge 
+			 and learnt representations</li>
+			 <li class="auto-style10">Detecting and avoiding overfitting</li>
+			 <li class="auto-style10">Modeling and understanding generalization 
+			 behavior with scarce data</li>
+		 </ul>
+		 <p class="MsoNormal">&nbsp;</p>
+		 <p class="MsoNormal"><b><span>Submission instructions</span></b><span>: 
+		 &nbsp;</span></p>
+		 <span lang="en-us">
+      <ul class="auto-style13">
+        <li class="auto-style10">
+		Each submitted paper must be no longer than 8 pages excluding references. Please refer to <a class="auto-style10" href="http://cvpr2018.thecvf.com/submission/main_conference/author_guidelines#call_for_papers" style="text-decoration:none">
+		<span class="auto-style10"><strong>CVPR Author Guideline</strong></span></a></li>
+        <li class="auto-style10">Please submit papers at 
+		<a class="auto-style10" href="https://cmt3.research.microsoft.com/VBSD2018" style="text-decoration:none">
+		<span class="auto-style10"><strong>CMT</strong></span></a></li>
+
     </ul>
-    <p>
-    </p> 
-    </div>
+		 
+		 
+		 <p class="MsoNormal">&nbsp;</p>
+		 <p class="MsoNormal"><b><span>Important dates</span></b><span> (all 
+		 deadlines 11:59 PM PST):<o:p></o:p></span></p>
+		 <ul class="auto-style13">
+			 <li class="auto-style10">
+			 Submission deadline: March 16, 2018</li>
+			 <li class="auto-style10">
+			 Decision notification: April 2, 2018</li>
+			 <li class="auto-style10">
+			 Final version submission: April 9, 2018</li>
+			 <li class="auto-style10">
+			 Workshop day: June 22, 2018</li>
+		 </ul>
+		           
+         <p>&nbsp;&nbsp;</p>
+		           
+      <h2 class="auto-style14"><strong>Organizers</strong></h2>
+		 <p><span lang="en-us">
+		 <table style="width: 100%">
+			 <tr>
+				 <td> 
+      <ul>
+        <li class="auto-style10">
+		<a class="auto-style10" href="mailto:jan.ernst@siemens.com" style="text-decoration:none">
+		<span class="auto-style10"><strong>Jan Ernst</strong></span></a><span class="auto-style10">, Siemens</span><span lang="en-us"><span class="auto-style12"> 
+		Corporate Technology</span></span></li>
+        <li class="auto-style10"><span class="auto-style12">
+		<a class="auto-style10"  href="mailto:ziyan.wu@siemens.com" style="text-decoration:none">
+		<span class="auto-style10"><strong>Ziyan Wu</strong></span></a><span class="auto-style10">, Siemens</span><span lang="en-us"><span class="auto-style12"> 
+		Corporate Technology </span></span></li>
+        <li class="auto-style10"><span class="auto-style12">
+		<a class="auto-style10"  href="mailto:kuanchuan.peng@siemens.com" style="text-decoration:none">
+		<span class="auto-style10"><strong>Kuan-Chuan Peng</strong></span></a><span class="auto-style10">, Siemens</span><span lang="en-us"><span class="auto-style12"> 
+		Corporate Technology </span></span></li>
+        <li class="auto-style1"><span class="auto-style12">
+		<span class="auto-style11">
+		<a class="auto-style10"  href="mailto:srikrishna.karanam@siemens.com" style="text-decoration:none">
+		<span class="auto-style10"><strong>Srikrishna Karanam</strong></span></a><span class="auto-style10">, Siemens</span></span><span lang="en-us"><span class="auto-style12"><span class="auto-style11"> 
+		Corporate Technology </span></span>
+		</span></li>
+    </ul>
+    			 </td>
+				 <td class="auto-style12">
+		 <img alt="" height="126" src="images/sie-logo-layer-claim-petrol-rgb.png" width="300" style="float: right"></td>
+			 </tr>
+		 </table>
+		 </span></p>
+	  </div>
+	  <span class="auto-style12">
+		<br>
   </div>
 </section>
 
@@ -97,7 +219,7 @@ Topics for this workshop may include, but are not limited to:
   <div class="footer-bottom">
     <div class="container">
       <div class="col-md-12">
-        <p>© 2017 All rights reserved. <br>
+        <p>© 2017 All rights reserved.
         </p>
       </div>
     </div>
